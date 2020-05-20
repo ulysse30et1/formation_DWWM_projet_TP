@@ -49,6 +49,7 @@ header {
 #popular-topics {
     grid-area: popular;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .list-group-item {
@@ -61,7 +62,9 @@ header {
 #liste-des-sujets {
     grid-area: liste;
     overflow: scroll;
+    overflow-x: hidden;
 }
+
 
 /* ====================== */
 /* modification du footer */

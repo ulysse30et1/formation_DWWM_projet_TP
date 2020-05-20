@@ -2,13 +2,14 @@ body {
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px auto auto auto 100px;
+    grid-template-rows: 100px auto auto auto 50px 100px;
 
     grid-template-areas:
         "header header header header"
         "nav nav nav nav"
         "msg msg msg msg"
         "page page page page"
+        ". modal modal ."
         "footer footer footer footer";
 
     row-gap: 10px;
@@ -47,8 +48,8 @@ nav{
 }
 
 img {
-    height: 64px;
-    width: 64px;
+    height: 70px;
+    width: 70px;
 }
 
 .page {
@@ -56,6 +57,14 @@ img {
     width: 100px;
 
     justify-self: center;
+}
+
+.btnModal {
+    grid-area: modal;
+}
+
+.modal {
+
 }
 
 footer {
