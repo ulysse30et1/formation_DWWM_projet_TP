@@ -1,0 +1,72 @@
+body {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px auto auto auto 50px 100px;
+
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "msg msg msg msg"
+        "page page page page"
+        ". modal modal ."
+        "footer footer footer footer";
+
+    row-gap: 10px;
+}
+
+header {
+    grid-area: header;
+}
+
+.logo {
+    width: 65%;
+    height: 100%;
+}
+
+.connexion {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-content: center;
+    width: 35%;
+    height: auto;
+}
+
+nav{
+    grid-area: nav;
+}
+
+#msg-container {
+    grid-area: msg;
+}
+
+.media {
+    margin-bottom: 10px;
+    background-color: cadetblue;
+}
+
+img {
+    height: 70px;
+    width: 70px;
+}
+
+.page {
+    grid-area: page;
+    width: 100px;
+
+    justify-self: center;
+}
+
+.btnModal {
+    grid-area: modal;
+}
+
+.modal {
+
+}
+
+footer {
+    grid-area: footer;
+}

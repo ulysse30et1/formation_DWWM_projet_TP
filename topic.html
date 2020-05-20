@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/topic.css">
+
+    <title>Agora topic</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <h1>AGORA</h1>
+        </div>
+        <div class="connexion">
+            <button type="button" class="btn btn-primary btn-sm">Connexion</button>
+            <button type="button" class="btn btn-secondary btn-sm">Créer un compte</button>
+        </div>
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Index</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">(┛✧Д✧))┛彡┻━┻</a>
+                <a class="nav-item nav-link" href="#">ಠ_ಠ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- messages et reponse du topic -->
+    <div id="msg-container">
+        <h2>titre du topic</h2>
+        <ul class="list-unstyled">
+            <li class="media">
+                <img class="d-flex mr-3" data-src="holder.js/64x64?theme=sky" src="assets/img/logo.png"
+                    alt="Generic placeholder image">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">pseudo</h5>
+                    <p>bla bla bla abla lalalaalalalblbablabblalaballbalbalablbalabl</p>
+                </div>
+            </li>
+            <li class="media">
+                <img src="..." class="mr-3" alt="avatar 70*70">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">pseudo</h5>
+                    <p>bla bla bla abla lalalaalalalblbablabblalaballbalbalablbalabl</p>
+                </div>
+            </li>
+            <li class="media">
+                <img src="..." class="mr-3" alt="avatar 70*70">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">pseudo</h5>
+                    <p>bla bla bla abla lalalaalalalblbablabblalaballbalbalablbalabl</p>
+                </div>
+            </li>
+            <li class="media">
+                <img src="..." class="mr-3" alt="avatar 70*70">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">pseudo</h5>
+                    <p>bla bla bla abla lalalaalalalblbablabblalaballbalbalablbalabl</p>
+                </div>
+            </li>
+            <li class="media">
+                <img src="..." class="mr-3" alt="avatar 70*70">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">pseudo</h5>
+                    <p>bla bla bla abla lalalaalalalblbablabblalaballbalbalablbalabl</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- selection de la page  -->
+    <div class="page btn-group btn-group-sm" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">2</button>
+        <button type="button" class="btn btn-secondary">>></button>
+    </div>
+
+    <!-- redaction d'un message -->
+
+    <!-- boutton de la modal -->
+    <button type="button" class="btnModal btn btn-primary" data-toggle="modal" data-target="#newPost">
+        rediger un message
+    </button>
+
+    <!-- Modal -->
+    <div class="modal" id="newPost" tabindex="-1" role="dialog" aria-labelledby="message" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="message">nouveau post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea name="contenu" cols="35" rows="10"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                    <button type="submit" class="btn btn-primary">poster</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <h2>footer</h2>
+    </footer>
+
+    <!-- cdn js pour bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+</html>
