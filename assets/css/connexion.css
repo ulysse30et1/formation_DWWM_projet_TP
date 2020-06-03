@@ -1,0 +1,46 @@
+body {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px auto auto 100px;
+
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        ". form form ."
+        "footer footer footer footer";
+
+    row-gap: 10px;
+}
+
+header {
+    grid-area: header;
+}
+
+.connexion {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-content: center;
+    width: 35%;
+    height: auto;
+}
+
+.logo {
+    width: 65%;
+    height: 100%;
+}
+
+nav{
+    grid-area: nav;
+}
+
+form {
+    margin-top: 200px;
+    grid-area: form;
+}
+
+footer {
+    grid-area: footer;
+}
