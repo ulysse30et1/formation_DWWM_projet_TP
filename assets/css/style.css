@@ -20,6 +20,10 @@ header {
     flex-direction: row;
 }
 
+/* taille des boutons */
+button {
+    width: 150px;
+}
 .logo {
  
 }
